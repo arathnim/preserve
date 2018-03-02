@@ -4,8 +4,8 @@ To mark variables to be preserved, wrap them with the 'preserve' macro:
 
 ```
 (preserve
-	(defvar shopping-list '(eggs bread milk))
-	(defvar save-game (make-save :new)))
+   (defvar shopping-list '(eggs bread milk))
+   (defvar save-game (make-save :new)))
 ```
 
 ## dependencies and installation
