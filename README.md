@@ -8,6 +8,20 @@ To mark variables to be preserved, wrap them with the 'preserve' macro:
    (defvar save-game (make-save :new)))
 ```
 
+For a clean exit, call 'preserve-end' before exiting.
+
+## example
+
+```
+(preserve
+   (defvar counter 0))
+
+(defun main ()
+   (format t "you have run this program ~a times" (incf counter))
+	(preserve-end)
+	(exit))
+```
+
 ## dependencies and installation
 
 Preserve requires quicklisp to run. It's been tested on sbcl, but should work on other CL implementations.
