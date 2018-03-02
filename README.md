@@ -18,8 +18,8 @@ For a clean exit, call 'preserve-end' before exiting.
 
 (defun main ()
    (format t "you have run this program ~a times" (incf counter))
-	(preserve-end)
-	(exit))
+   (preserve-end)
+   (exit))
 ```
 
 ## dependencies and installation
